@@ -10,7 +10,10 @@ const Marks = new Schema({
  },
  eng:{
     type:Number
- }
+ },
+ Student_name:{
+   type:mongoose.Schema.Types.ObjectId, ref:'Students'    
+   }
 
 });
 module.exports = mongoose.model('Mark', Marks);
